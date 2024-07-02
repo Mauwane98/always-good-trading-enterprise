@@ -1,0 +1,109 @@
+/* Enhanced construction.css styles */
+
+/* Global Styles (Already defined in index.css) */
+
+/* Header Styles (Already defined in index.css) */
+
+/* Hero Section Styles (Already defined in index.css) */
+
+/* Content Section Styles */
+.content {
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 40px 30px;
+    margin: 20px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.content h2 {
+    font-size: 36px;
+    color: #007BFF; /* Construction blue */
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.content h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #007BFF; /* Construction blue */
+    display: block;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content ul li {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.service-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Clients Section Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.construction {
+    margin-bottom: 40px;
+}
+
+.construction h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.construction ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.construction img.service-image {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.clients {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+}
+
+.client-carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.client-carousel img {
+    max-width: 100px;
+    margin: 0 20px;
+}
+
+/* Footer Styles (Already defined in index.css) */
+
+/* Media Queries for Responsiveness (Already defined in index.css) */

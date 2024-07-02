@@ -1,0 +1,102 @@
+/* Global Styles (Already defined in index.css) */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.team-member {
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 calc(50% - 40px);
+    text-align: center;
+}
+
+.team-image {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+.team-member h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.team-member a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.office-locations {
+    text-align: center;
+}
+
+.office-locations h2 {
+    font-size: 36px;
+    color: #007BFF;
+    margin-bottom: 40px;
+}
+
+.office {
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.office h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.office p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.office a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .team {
+        flex-direction: column;
+    }
+
+    .team-member {
+        flex: 1 1 100%;
+    }
+}

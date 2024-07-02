@@ -1,0 +1,82 @@
+
+
+/* Content Section */
+.content {
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 40px 30px;
+    margin: 20px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.content h2 {
+    font-size: 36px;
+    color: #007BFF; /* Construction blue */
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.content h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #007BFF; /* Construction blue */
+    display: block;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.content p, .content ul {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.content ul {
+    list-style: disc inside;
+    padding-left: 20px;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+/* Adding subtle animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .content {
+        padding: 30px 20px;
+    }
+
+    .content h2 {
+        font-size: 28px;
+    }
+
+    .content p, .content ul {
+        font-size: 16px;
+    }
+}
